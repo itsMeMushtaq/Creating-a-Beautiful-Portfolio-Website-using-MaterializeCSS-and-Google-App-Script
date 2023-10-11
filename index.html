@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <base target="_top">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Font-Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        header {
+            background: url("https://drive.google.com/uc?export=view&id=1wiQ97q5-0kyAXaC0zpOOG8BoFHFwB9rP");
+            background-position: center;
+            background-size: cover;
+            min-height: 100vh;
+        }
+        @media screen and (max-width: 670px) {
+            header {
+                min-height: 50vh;
+            }
+        }
+        .section {
+            padding-top: 4vw;
+            padding-bottom: 4vw;
+        }
+        .tabs .indicator {
+            background-color: #1a237e;
+        }
+        .tabs .tab a:focus, .tabs .tab a:focus.active {
+            background: transparent;
+        }
+        .justify-align {
+            text-align: justify;
+        }
+
+	/* MARGIN CLASSES */	
+	.m { margin: 5px !important; }	
+	.m-0 { margin: 0px !important; }
+	.m-5 { margin: 5px !important; }
+	.m-10 { margin: 10px !important; }
+	.m-15 { margin: 15px !important; }
+	.m-20 { margin: 20px !important; }
+
+  /* HORIZONTAL MARGINS*/
+	.mx-0 { margin-left: 0px !important; margin-right: 0px !important; }
+	.mx-5 { margin-left: 5px !important; margin-right: 5px !important; }
+	.mx-10 { margin-left: 10px !important; margin-right: 10px !important; }
+	.mx-15 { margin-left: 15px !important; margin-right: 15px !important; }
+	.mx-20 { margin-left: 20px !important; margin-right: 20px !important; }
+
+  /* VERTICAL MARGINS*/
+	.my-0 { margin-top: 0px !important; margin-bottom: 0px !important; }
+	.my-5 { margin-top: 5px !important; margin-bottom: 5px !important; }
+	.my-10 { margin-top: 10px !important; margin-bottom: 10px !important; }
+	.my-15 { margin-top: 15px !important; margin-bottom: 15px !important; }
+	.my-20 { margin-top: 20px !important; margin-bottom: 20px !important; }
+
+	/* MARGIN-TOP CLASSES */
+	.mt { margin-top: 5px !important; }
+	.mt-0 { margin-top: 0px !important; }	
+	.mt-1 { margin-top: 1px !important; }	
+	.mt-2 { margin-top: 2px !important; }	
+	.mt-3 { margin-top: 3px !important; }	
+	.mt-5 { margin-top: 5px !important; }	
+	.mt-6 { margin-top: 6px !important; }	
+	.mt-7 { margin-top: 7px !important; }	
+	.mt-8 { margin-top: 8px !important; }
+	.mt-9 { margin-top: 9px !important; }	
+	.mt-10 { margin-top: 10px !important; }
+	.mt-15 { margin-top: 15px !important; }
+	.mt-20 { margin-top: 20px !important; }
+
+	/* MARGIN-BOTTOM CLASSES */
+	.mb { margin-bottom: 5px !important; }
+	.mb-0 { margin-bottom: 0px !important; }
+	.mb-1 { margin-bottom: 1px !important; }	
+	.mb-2 { margin-bottom: 2px !important; }	
+	.mb-3 { margin-bottom: 3px !important; }	
+	.mb-5 { margin-bottom: 5px !important; }	
+	.mb-6 { margin-bottom: 6px !important; }	
+	.mb-7 { margin-bottom: 7px !important; }	
+	.mb-8 { margin-bottom: 8px !important; }	
+	.mb-9 { margin-bottom: 9px !important; }	
+	.mb-10 { margin-bottom: 10px !important; }
+	.mb-15 { margin-bottom: 15px !important; }
+	.mb-20 { margin-bottom: 20px !important; }
+
+	/* MARGIN-RIGHT CLASSES */
+  .mr { margin-right: 5px !important; }
+  .mr-0 { margin-right: 0px !important; }	
+	.mr-1 { margin-right: 1px !important;	}
+	.mr-2 { margin-right: 2px !important;	}
+	.mr-3 { margin-right: 3px !important;	}
+	.mr-5 { margin-right: 5px !important;	}	
+	.mr-6 { margin-right: 6px !important;	}
+	.mr-7 { margin-right: 7px !important;	}
+	.mr-8 { margin-right: 8px !important; }
+	.mr-9 { margin-right: 9px !important; }	
+	.mr-10 { margin-right: 10px !important; }
+	.mr-15 { margin-right: 15px !important; }
+	.mr-20 { margin-right: 20px !important; }
+
+	/* MARGIN-LEFT CLASSES */
+  .ml { margin-left: 5px !important; }
+	.ml-0 { margin-left: 0px !important; }
+	.ml-1 { margin-left: 1px !important; }
+	.ml-2 { margin-left: 2px !important; }	
+	.ml-3 { margin-left: 3px !important; }	
+	.ml-5 { margin-left: 5px !important; }	
+	.ml-6 { margin-left: 6px !important; }	
+	.ml-7 { margin-left: 7px !important; }	
+	.ml-8 { margin-left: 8px !important; }	
+	.ml-9 { margin-left: 9px !important; }
+	.ml-10 { margin-left: 10px !important; }
+	.ml-15 { margin-left: 15px !important; }
+	.ml-20 { margin-left: 20px !important; }
+
+	/* PADDING CLASSES */	
+	.p { padding: 5px !important;	}
+	.p-0 { padding: 0px !important; }
+	.p-1 { padding: 1px !important; }
+	.p-2 { padding: 2px !important; }
+	.p-3 { padding: 3px !important; }
+	.p-4 { padding: 4px !important; }
+	.p-5 { padding: 5px !important; }
+	.p-6 { padding: 6px !important; }
+	.p-7 { padding: 7px !important; }
+	.p-8 { padding: 8px !important; }
+	.p-9 { padding: 9px !important; }
+	.p-10 { padding: 10px !important; }	
+	.p-15 { padding: 15px !important; }	
+	.p-20 { padding: 20px !important; }	
+
+	/* PADDING-TOP CLASSES */
+	.pt { padding-top: 5px !important; }
+	.pt-0 { padding-top: 0px !important; }
+	.pt-1 { padding-top: 1px !important; }
+  .pt-2 { padding-top: 2px !important; }
+	.pt-3 { padding-top: 3px !important; }	
+	.pt-5 { padding-top: 5px !important; }	
+	.pt-6 { padding-top: 6px !important; }	
+	.pt-7 { padding-top: 7px !important; }	
+	.pt-8 { padding-top: 8px !important; }	
+	.pt-9 { padding-top: 9px !important; }	
+	.pt-10 { padding-top: 10px !important; }
+	.pt-15 { padding-top: 15px !important; }
+	.pt-20 { padding-top: 20px !important; }
+
+	/* PADDING-BOTTOM CLASSES */
+  .pb { padding-bottom: 5px !important; }
+	.pb-0 { padding-bottom: 0px !important; }	
+	.pb-1 { padding-bottom: 1px !important; }	
+	.pb-2 { padding-bottom: 2px !important; }	
+	.pb-3 { padding-bottom: 3px !important; }	
+	.pb-5 { padding-bottom: 5px !important; }	
+	.pb-6 { padding-bottom: 6px !important; }	
+	.pb-7 { padding-bottom: 7px !important; }	
+	.pb-8 { padding-bottom: 8px !important; }	
+	.pb-9 { padding-bottom: 9px !important; }	
+	.pb-10 { padding-bottom: 10px !important; }
+	.pb-15 { padding-bottom: 15px !important; }
+	.pb-20 { padding-bottom: 20px !important; }
+	
+  /* PADDING-RIGHT CLASSES */	
+  .pr { padding-right: 5px !important; }
+	.pr-0 { padding-right: 0px !important; }	
+	.pr-1 { padding-right: 1px !important; }	
+	.pr-2 { padding-right: 2px !important; }	
+	.pr-3 { padding-right: 3px !important; }	
+	.pr-5 { padding-right: 5px !important; }	
+	.pr-6 { padding-right: 6px !important; }	
+	.pr-7 { padding-right: 7px !important; }	
+	.pr-8 { padding-right: 8px !important; }	
+	.pr-9 { padding-right: 9px !important; }	
+	.pr-10 { padding-right: 10px !important; }
+	.pr-15 { padding-right: 15px !important; }
+	.pr-20 { padding-right: 20px !important; }
+
+	/* PADDING-RIGHT CLASSES */	
+  .pl { padding-left: 5px !important; }
+	.pl-0 { padding-left: 0px !important; }	
+	.pl-1 { padding-left: 1px !important; }	
+	.pl-2 { padding-left: 2px !important; }	
+	.pl-3 { padding-left: 3px !important; }	
+	.pl-5 { padding-left: 5px !important; }	
+	.pl-6 { padding-left: 6px !important; }	
+	.pl-7 { padding-left: 7px !important; }	
+	.pl-8 { padding-left: 8px !important; }	
+	.pl-9 { padding-left: 9px !important;	}	
+	.pl-10 { padding-left: 10px !important; }
+	.pl-15 { padding-left: 15px !important; }
+	.pl-20 { padding-left: 20px !important; }
+
+	/*BORDER CLASSES*/	
+	.border { border: 1px solid !important; }	
+	.border-red { border-color: red !important; }	
+	.border-teal { border-color: teal !important; }	
+	.border-yellow { border-color: yellow !important; }	
+	.border-orange { border-color: orange !important; }	
+	.border-yellowgreen { border-color: yellowgreen !important; }	
+	.border-white { border-color: white !important; }	
+	.border-whitesmoke { border-color: whitesmoke !important; }
+	
+	.round { border-radius: 5px !important; }
+	.round-5 { border-radius: 5px !important; }
+	.round-10 { border-radius: 10px !important;	}	
+	.round-15 { border-radius: 15px !important; }	
+	.round-20 { border-radius: 20px !important;	}
+	.round-25 { border-radius: 25px !important;	}
+	
+	.img-thumb { 
+		border: 5px solid #ccc !important;
+		border-radius: 10px !important;
+	}
+
+	/* FLEX CONTAINER */
+	
+	.flex-container-row {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+	}
+	
+	.flex-container-col {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+	}
+	
+	.flex-center {
+		justify-content: center;
+		align-items: center;
+	}
+	
+	.flex-item {
+		justify-content: center;
+		align-items: center;
+		white-space: nowrap;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+        /* Responsive layout - makes a one column layout instead of a two-column layout */
+        @media (max-width: 800px) {
+            .flex-container-row {
+                flex-direction: column;
+            }
+        }
+        .title { font-size: 2.2rem; }	
+        .sub-title { font-size: 1.9rem; }	
+	    .bold { font-weight: bold; }               
+
+    </style>
+</head>
+
+<body>
+    
+    <!-- navbar -->
+    <header>
+        <nav class="nav-wrapper transparent">
+            <div class="container">
+                <a href="#" class="brand-logo">Photo Ninja</a>
+                <a href="#" class="sidenav-trigger" data-target="mobile-menu"><i class="fa-solid fa-bars"></i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#photos">Photos</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="https://www.facebook.com/itsMeMushtaq" class="btn-floating btn-small indigo darken-4 tooltipped" data-tooltip="Visit us at Facebook" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="#" class="btn-floating btn-small indigo darken-4 tooltipped" data-tooltip="Visit us at Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#" class="btn-floating btn-small indigo darken-4 tooltipped" data-tooltip="Visit us at X-Twitter"><i class="fa-brands fa-x-twitter"></i></a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Mobile Menu -->
+        <ul class="sidenav" id="mobile-menu">
+            <li><a href="#photos">Photos</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>            
+        </ul>
+    </header>
+
+    <!-- photo / grid -->
+
+    <section class="container section scrollspy" id="photos">
+        <div class="row">
+            <div class="col s12 l4">
+                <img src="https://drive.google.com/uc?export=view&id=10N8ch8bUitFa4SBRMCtP4YrNc1tnvlEi" alt="Portrait" class="responsive-img materialboxed img-thumb border-red z-depth-2">
+            </div>
+            <div class="col s12 l6 offset-l1">
+                <h4 class="indigo-text text-darken-4 m-0">Portraits</h4>
+                <p class="justify-align">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates facilis non autem placeat expedita illum harum magnam mollitia minus dolorum saepe quasi obcaecati sequi aliquid molestias eligendi, architecto eaque nemo?</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col s12 l4 push-l7 offset-l1">
+                <img src="https://drive.google.com/uc?export=view&id=1OonSBPa7zmZnR9rReu-8RtSDr_HFhI1H" alt="Portrait" class="responsive-img materialboxed img-thumb border-red z-depth-2">
+            </div>
+            <div class="col s12 l6 pull-l5 right-align offset-l1">
+                <h4 class="indigo-text text-darken-4 m-0">City Scapes</h4>
+                <p class="justify-align">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates facilis non autem placeat expedita illum harum magnam mollitia minus dolorum saepe quasi obcaecati sequi aliquid molestias eligendi, architecto eaque nemo?</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col s12 l4">
+                <img src="https://drive.google.com/uc?export=view&id=1cwuum0etTuF7zXLZ9AWRpjL8WMyXaoxg" alt="Portrait" class="responsive-img materialboxed img-thumb border-red z-depth-2">
+            </div>
+            <div class="col s12 l6 offset-l1">
+                <h4 class="indigo-text text-darken-4 m-0">Nature</h4>
+                <p class="justify-align">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates facilis non autem placeat expedita illum harum magnam mollitia minus dolorum saepe quasi obcaecati sequi aliquid molestias eligendi, architecto eaque nemo?</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col s12 l4 push-l7 offset-l1">
+                <img src="https://drive.google.com/uc?export=view&id=1OFfM2-T1pm41nVP32OyF0vYX0L48YUuy" alt="Portrait" class="responsive-img materialboxed img-thumb border-red z-depth-2">
+            </div>
+            <div class="col s12 l6 pull-l5 right-align offset-l1">
+                <h4 class="indigo-text text-darken-4 m-0">Pets</h4>
+                <p class="justify-align">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates facilis non autem placeat expedita illum harum magnam mollitia minus dolorum saepe quasi obcaecati sequi aliquid molestias eligendi, architecto eaque nemo?</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- parallax -->
+
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="https://drive.google.com/uc?export=view&id=1Pfgs9GpphbREgSQ6q0J-XwzGSpphZVNQ" alt="Milky Way" class="responsive-img">
+        </div>
+    </div>
+
+    <!-- services / tab -->
+
+    <section class="section container scrollspy" id="services">
+        <div class="row">
+            <div class="col s12 l4">
+                <h2 class="indigo-text text-darken-4 m-0">What I do?</h2>
+                <div class="container">
+                    <p class="justify-align">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi fuga incidunt asperiores similique sequi doloribus hic consectetur, voluptates, tempore, esse iusto? Odit ducimus praesentium consectetur repellat voluptatem error qui maiores.</p>
+                </div>                
+            </div>
+            <div class="col s12 l6 offset-l2">
+                <ul class="tabs">
+                    <li class="tab col s6"><a href="#photography" class="indigo-text text-darken-4">Photography</a></li>
+                    <li class="tab col s6"><a href="#editing" class="indigo-text text-darken-4">Editing</a></li>
+                </ul>
+
+                <div class="col s12" id="photography">
+                    <p class="flow-text indigo-text text-darken-4">Photography</p>
+                    <p class="justify-align">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga eveniet accusamus fugiat dolore maiores ducimus illo beatae odit dolor velit sint dolorum distinctio accusantium aut, impedit modi sunt exercitationem quos!</p>
+                    <p class="justify-align">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates explicabo molestiae eius placeat dolore officiis necessitatibus, iusto voluptas asperiores aspernatur fugiat fugit nostrum harum perspiciatis ducimus voluptate aliquid, consectetur sunt.</p>
+                </div>
+
+                <div class="col s12" id="editing">
+                    <p class="flow-text indigo-text text-darken-4">Editing</p>
+                    <p class="justify-align">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga eveniet accusamus fugiat dolore maiores ducimus illo beatae odit dolor velit sint dolorum distinctio accusantium aut, impedit modi sunt exercitationem quos!</p>
+                    <p class="justify-align">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates explicabo molestiae eius placeat dolore officiis necessitatibus, iusto voluptas asperiores aspernatur fugiat fugit nostrum harum perspiciatis ducimus voluptate aliquid, consectetur sunt.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- parallax -->
+
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="https://drive.google.com/uc?export=view&id=1twLeMAtf4ESz1Ey8H43t87hUrrGEBorN" alt="Moon" class="responsive-img">
+        </div>
+    </div>    
+
+    <!-- contact form -->
+
+    <section class="section container scrollspy" id="contact">
+        <div class="row">
+            <div class="col s12 l5">
+                <h2 class="indigo-text text-darken-4 m-0">Get In Touch</h2>
+                <p class="justify-align">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium, eius molestias aliquid voluptatum eveniet eum vel nam cumque iste minima illum quaerat sequi ducimus voluptas ullam et laboriosam? Id, excepturi.</p>
+                <p class="justify-align">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa ut cum, eligendi laborum vero voluptates, nostrum dolore suscipit eaque saepe quam debitis perspiciatis veritatis eos ducimus vel ratione assumenda tempora.</p>
+            </div>
+            <div class="col s12 l5 offset-l2">
+                <form name="contactForm" id="contactForm" method="post">
+                    <div class="input-field">
+                        <i class="fa-solid fa-at prefix"></i>
+                        <input type="email" name="email" id="email" required />
+                        <label for="email">Your Email Address</label>
+                    </div>
+                    <div class="input-field">
+                        <i class="fa-regular fa-message prefix"></i>
+                        <textarea name="message" id="message" class="materialize-textarea" required></textarea>
+                        <label for="message">Your Message</label>
+                    </div>
+                    <div class="input-field">
+                        <i class="fa-regular fa-calendar-plus prefix"></i>
+                        <input type="text" name="date" id="date" class="datepicker" required>
+                        <label for="date">Choose a date you need me for ...</label>
+                    </div>
+                    <div class="input-field">
+                        <div>Services Required ...</div>
+                        <div>
+                            <label>
+                                <input type="checkbox" name="services" id="services" value="Photography" />
+                                <span>Photography</span>
+                            </label>                            
+                        </div>
+                        <div>
+                            <label>
+                                <input type="checkbox" name="services" id="services" value="Editing" />
+                                <span>Editing</span>
+                            </label>                            
+                        </div>
+                    </div>
+                    <div class="input-field center">
+                        <button class="btn" id="btnSubmit" name="btnSubmit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+
+    <footer class="page-footer grey darken-3">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 l6">
+                    <h5>About me</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum sit nobis ut fugit pariatur eveniet odit placeat, ea velit, fuga corrupti provident omnis quas numquam quibusdam inventore dolor repellat? Ipsam.</p>
+                </div>
+                <div class="col s12 l4 offset-l2">
+                    <h5>Connect</h5>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">YouTube</a></li>
+                        <li><a href="#">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright grey darken-4">
+            <div class="container center-align">&copy; 2023 Photo Ninja, All Rights are Reserved</div>
+        </div>
+    </footer>
+
+    <!--JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.tabs').tabs();
+            $('.sidenav').sidenav();
+            $('.parallax').parallax();
+            $('.tooltipped').tooltip();
+            $('.scrollspy').scrollSpy();
+            $('.materialboxed').materialbox();
+            $('.datepicker').datepicker({disableWeekends:true});
+            //$('.sidenav').sidenav({ edge: 'left', inDuration: 500 });
+        });
+    </script>
+</body>
+
+</html>
